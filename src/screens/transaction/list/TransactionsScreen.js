@@ -10,6 +10,7 @@ import {
   Item,
   Input,
   View,
+  Left
 } from 'native-base';
 import { RefreshControl, Alert } from 'react-native';
 import CommonHeader from '../../../components/CommonHeader';
@@ -26,9 +27,9 @@ function RowTransaction({ onPress, transaction }) {
       <Left>
         <Icon name='calculator' type='FontAwesome5'/>
       </Left>
-      <Body>
-        <Text>{transaction.type} {transaction.createdDate}</Text>
-      </Body>
+      <Left>
+      <Text>{transaction.type} {transaction.createdDate}</Text>
+      </Left>      
       <Right>
         <Icon name="rightcircle" type="AntDesign" />
       </Right>

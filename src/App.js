@@ -6,6 +6,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import stackRoutes from './configs/routes';
 import { Root } from 'native-base';
+import { YellowBox } from 'react-native';
+
+console.disableYellowBox= true;
 
 const Stack = createStackNavigator();
 
