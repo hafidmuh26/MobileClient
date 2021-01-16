@@ -42,12 +42,9 @@ class HomeScreen extends Component {
     super(props);
 
     this.state = {
-      scrollEnabled: false
+      scrollEnabled: false,
     };
-
-
   }
-
 
   clickEventListener(item) {
     Alert.Alert(item.title);

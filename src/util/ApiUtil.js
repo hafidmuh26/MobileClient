@@ -1,7 +1,8 @@
 const axios = require('axios');
 
 const commonAxios = axios.create({
-    baseURL: 'http://192.168.1.24:8080/'
+    baseURL: 'http://10.107.130.32:8080/'
+    //baseURL: 'http://192.168.1.24:8080/'
 });
 
 commonAxios.interceptors.response.use(function (response) {
